@@ -1,0 +1,35 @@
+from chatterbot import ChatBot
+from chatterbot.trainers import ListTrainer
+
+# Create a ChatBot instance
+bot = ChatBot('MyBot')
+
+# Create a trainer for the bot
+trainer = ListTrainer(bot)
+
+# Train the bot with some sample conversations
+trainer.train([
+    'Hello',
+    'Hi there!',
+    'How are you?',
+    'I am doing well, thank you!',
+    'What is your name?',
+    'My name is ChatBot.',
+    'Nice to meet you!',
+    'Nice to meet you too!',
+    'Goodbye',
+    'Goodbye!'
+])
+
+# Get a response from the bot based on user input
+def get_bot_response(user_input):
+    response = bot.get_response(user_input)
+    return str(response)
+
+# Example usage:
+while True:
+    user_input = input('You: ')
+    if user_input.lower() == 'quit':
+        break
+    bot_response = get_bot_response(user_input)
+    print('Bot:', bot_response)
