@@ -15,7 +15,7 @@ trainer.train([
     'I am doing well, thank you!',
     'What is your name?',
     'My name is ChatBot.',
-    'Nice to meet you!',
+    'Nice to meet you bro!',
     'Nice to meet you too!',
     'Goodbye',
     'Goodbye!'
