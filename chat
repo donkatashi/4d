@@ -7,7 +7,7 @@ bot = ChatBot('MyBot')
 # Create a trainer for the bot
 trainer = ListTrainer(bot)
 
-# Train the bot with some sample conversations
+# Train the bot with some sample  and conversations
 trainer.train([
     'Hello',
     'Hi there!',
